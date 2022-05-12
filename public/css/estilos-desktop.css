@@ -1,0 +1,13 @@
+@media (min-width: 769px ) {
+    .burgerbox{
+        display: none;
+    }
+    
+    .product-title {
+        display: none;
+    }
+
+    .product {
+        box-shadow: none;
+    }
+}

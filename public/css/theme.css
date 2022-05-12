@@ -1,0 +1,83 @@
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+}
+
+.logo-ml {
+    width: 50%;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+.navbar a {
+    color: #000;
+    text-decoration: none;
+}
+
+.navbar {
+    list-style: none;
+    display: none;
+}
+
+.burger-menu {
+    text-align: center;
+}
+
+.burger-menu i {
+    padding: 8px;
+    background-color: #1259c3;
+    color: #ebebeb;
+    border-radius: 5px;
+}
+
+.truck-item {
+    text-align: center;
+    display: block;
+    font-size: 24px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -20px;
+}
+
+.product {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
+.main {
+    padding-left: 5%;
+    padding-right: 5%;
+    margin: 0 auto;
+    background-color : #ebebeb;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+.bg-footer {
+    background-color: white;
+    background-size: 50px;
+}
+
+.titulo-gris {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: normal;
+    color : #666;
+}
+
+.footer-article {
+    justify-content: center;
+    width: 90%;
+    padding: 10px;
+}
+
+.footer-item {
+    font-size: 3em;
+    margin-bottom: 10px;
+
+}
