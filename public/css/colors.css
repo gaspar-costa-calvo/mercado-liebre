@@ -1,47 +1,51 @@
 .bg-amarillo {
-    background-color: #EAC926;
+  background-color: #eac926;
 }
 
 .bg-celeste {
-    background-color: #1259c3;
+  background-color: #1259c3;
 }
 
 .bg-blanco {
-    background-color: white;
+  background-color: white;
+}
+
+.bg-gris-claro {
+  background-color: #ebebeb;
 }
 
 .blanco {
-    color: white;
+  color: white;
 }
 
 .amarillo {
-    color: #EAC926;
+  color: #eac926;
 }
 
 .azul {
-   color : #03264C; 
+  color: #03264c;
 }
 
 .celeste {
-    color : #1259c3;
-} 
+  color: #1259c3;
+}
 
 .gris-oscuro {
-    color : #666;
+  color: #666;
 }
 
 .gris-claro {
-    color : #ebebeb;
+  color: #ebebeb;
 }
 
 .verde {
-    color : #39b54a;
+  color: #39b54a;
 }
 
 .negrita {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .no-negrita {
-    font-weight: lighter;
+  font-weight: lighter;
 }

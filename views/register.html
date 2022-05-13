@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link href="/css/normalize.css" rel="stylesheet" />
+    <link href="/css/theme.css" rel="stylesheet" />
+    <link href="\css\estilos-desktop.css" rel="stylesheet" />
+    <link href="\css\estilos-tablet.css" rel="stylesheet" />
+    <link href="/css/utils.css" rel="stylesheet" />
+    <link href="/css/colors.css" rel="stylesheet" />
+    <link href="/css/fonts.css" rel="stylesheet" />
+    <link href="/css/register.css" rel="stylesheet" />
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="bg-amarillo">
+      <div class="">
+        <img
+          class="logo-ml"
+          src="/images/logo-mercado-liebre.svg"
+          alt="Logo Mercado Liebre"
+          width="100%"
+        />
+        <div class="flex-container padd-8 font-16">
+          <div class=""><p>barra de búsqueda</p></div>
+          <i class="fas fa-search"></i>
+        </div>
+        <h2 class="text-center font-16 no-negrita padd-5">
+          <i class="fas fa-hand-holding-usd"></i> Comprá en cuotas y sin tarjeta
+          de crédito
+        </h2>
+      </div>
+      <nav class="padd-5">
+        <ul class="navbar">
+          <li><a href="#ofertas"> Ofertas </a></li>
+          <li><a href="#">Tiendas Oficiales</a></li>
+          <li><a href="#">Vender</a></li>
+          <li><a href="#">Ayuda</a></li>
+          <li>
+            <a href="/register"
+              >Creá tu cuenta <i class="fas fa-id-card"></i
+            ></a>
+          </li>
+          <li>
+            <a href="#">Ingresá <i class="fas fa-sign-in-alt"></i></a>
+          </li>
+          <li>
+            <a href="#">Mis compras <i class="fas fa-shopping-basket"></i></a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="burger-menu font-24 margb-8">
+        <i class="fas fa-bars"></i>
+      </div>
+    </header>
+
+
+    <main class="flex-container flex-center bg-gris-claro w-100">
+      <form class="w-90  flex-container flex-column" action="/" method="get">
+        <div class="marg-15">
+          <label>
+              <input
+                class="w-100 font-24 input-border padd-5" 
+                placeholder="Nombre y apellido"
+                type="text" 
+                name="Nombre y apellido" 
+                id="nombre"
+              />
+          </label>
+        </div>
+        <div class="marg-15">
+          <label for="n-user">
+            <input 
+                class="w-100 font-24 input-border padd-5" 
+                placeholder="Nombre de Usuari@"
+                type="text"
+                name="Nombre de usuari@"
+                id="n-user"
+            />
+          </label>
+        </div>
+        <div class="marg-15 ">
+          <label for="e-mail">
+            <input 
+                class="w-100 font-24 input-border padd-5" 
+                placeholder="Correo electronico"
+                type="text"
+                name="Correo electrico"
+                id="e-mail"
+            />
+          </label>
+        </div>
+
+        <div class="font-24 w-90 margb-8 margt-8 flex-container flex-row">
+            <label class="space-between">
+              <input 
+                  class="w-25 input-border grow-50 padd-5 "
+                  placeholder="Contraseña" 
+                  type="password" 
+                  name="contraseña" 
+              />
+              <input 
+                  class="w-25 input-border grow-50 padd-5"
+                  placeholder="Confirmar Contraseña"
+                  type="password"
+                  name="confirmar-contraseña"
+              />
+            </label>
+        </div>
+
+      <div class="w-90 ">
+        <p class="font-20 negrita margb-8 margt-8 text-start">Fecha de nacimiento</p>
+          <label for="birth-date">
+            <input
+                class="w-100 margt-8 font-16 input-border padd-5"
+                type="date"
+                name="Fecha de nacimiento"
+                id="birth-date"
+            />
+          </label>
+        </div>
+
+        <div >
+          <p class="font-20 negrita margb-8 margt-8 text-start">Perfil de usuario</p>
+            <div class="font-16 text-start">
+              <label class="padd-5" for="perfil-user-buy">
+                <input
+                  class=""
+                  type="radio"
+                  name="perfil-de-usuario"
+                  value="Comprar"
+                  id="perfil-user-buy"
+                />
+                Comprador</label>
+
+              <label class="padd-5" for="perfil-user-sell">
+                <input
+                  type="radio"
+                  name="perfil-de-usuario"
+                  value="Vender"
+                  id="perfil-user-sell"
+                />
+                Vendedor</label>
+
+            </div>
+        </div>
+
+      
+      <div class="text-start">
+        <p class="font-20 negrita margt-8">Intereses</p>
+          <div class="font-16 flex-container flex-column">
+            <label class="padd-5" for="electro">
+              <input
+                type="checkbox"
+                name="categorias-interes"
+                value="Electro"
+                id="electro"
+              />Electro
+            </label>
+        
+            <label class="padd-5" for="moda">
+              <input
+                
+                type="checkbox"
+                name="categorias-interes"
+                value="Moda"
+                id="moda"
+              />moda
+            </label>
+        
+            <label class="padd-5" for="home">
+              <input
+                
+                type="checkbox"
+                name="categorias-interes"
+                value="Hogar"
+                id="home"
+              />Hogar
+            </label>
+        
+            <label class="padd-5" for="toys">
+              <input
+                
+                type="checkbox"
+                name="categorias-interes"
+                value="Juguetería"
+                id="toys"
+              />Juguetería
+            </label>
+
+            <label class="padd-5" for="healthy-life">
+              <input
+                
+                type="checkbox"
+                name="categorias-interes"
+                value="Vida sana"
+                id="healthy-life"
+              />Vida sana
+        </div>
+      </div>
+          
+      <div>
+        <p class="font-20 negrita margb-8 margt-8 text-start">Foto de perfil</p>
+        <label for="perfil-picture">        
+            <input 
+              type="file" 
+              name="foto-perfil" 
+              accept="img*"
+              id="perfil-picture"
+            />
+      </label>
+      </div>
+
+      <div class="w-50 marg-15">
+        <button
+            class="w-100"
+            type="submit">Enviar
+        </button>
+        <button
+            class="w-100"
+            type="reset">Borrar
+        </button>
+      </div>
+      </form>
+    </main>
+
+    <footer class="bg-footer">
+      <section class="flex-container flex-column marg-15 flex-center">
+        <article class=" footer-article marg-8">
+          <i class="fas fa-credit-card azul footer-item"></i>
+          <p 
+            class="negrita gris-oscuro font-20 ">
+              Pagá con tarjeta o en efectivo
+          </p>
+          <p class="gris-oscuro font-16">
+            Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o
+            efectivo en puntos de pago. ¡Y siempre es seguro!
+          </p>
+        </article>
+
+        <article class=" footer-article marg-8">
+          <i class="fas fa-gift azul footer-item"></i>
+          <p 
+            class="negrita gris-oscuro font-20">
+              Envío gratis desde $ 2.500</p>
+          <p class="gris-oscuro font-16">
+            Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en
+            miles de productos. Es un beneficio de Mercado Puntos.
+          </p>
+        </article>
+
+        <article class=" footer-article marg-8">
+          <i class="fas fa-user-shield azul footer-item"></i>
+          <p class="negrita gris-oscuro font-20">Seguridad, de principio a fin</p>
+          <p class="gris-oscuro font-16">
+            ¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no
+            puedas hacer, porque estás siempre protegid@.
+          </p>
+        </article>
+
+        <p class="margb-8 margt-8 text-start">Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
+      </section>
+    </footer>
+  </body>
+</html>

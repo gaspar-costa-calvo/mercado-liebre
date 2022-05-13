@@ -1,0 +1,19 @@
+.text-in-box {
+    display:flex
+    
+}
+
+input::placeholder {
+    font-size: 16px;
+}
+
+.main-register {
+    display: flex;
+    flex: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    background-color: #ebebeb;
+    flex-direction: column;
+    
+}
