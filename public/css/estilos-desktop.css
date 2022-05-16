@@ -1,6 +1,10 @@
 @media (min-width: 769px ) {
-    .burgerbox{
+    .burger-menu{
         display: none;
+    }
+
+    .logo-ml {
+        flex-grow: 0.25;
     }
     
     .product-title {

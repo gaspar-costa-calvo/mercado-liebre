@@ -28,30 +28,48 @@
 
 <body >
     <header class="bg-amarillo">
-        <div class="">
+        <div class="flex-container no-wrap ">
             <img
                 class="logo-ml" 
-               src = "/images/logo-mercado-liebre.svg" 
-                alt="Logo Mercado Liebre" width="100%"
+                src = "/images/logo-mercado-liebre.svg" 
+                alt="Logo Mercado Liebre"
             />
-            <div class="flex-container padd-8 font-16">            
-                <div class=""> <p>barra de búsqueda</p> </div>
-                <i class="fas fa-search "></i>
+    <!---  <div class="flex-container 
+                        padd-8 
+                        font-16 
+                        flex-center 
+                        no-wrap" >            
+                <form action="/" method="get">
+                    <input
+                         type="text" 
+                         placeholder="Buscar productos, marcas y más">
+                         <i class="fas fa-search "></i>
+                    </input> 
+                </form>   
+            </div>  --->
             </div>
-            <h2 class="text-center font-16 no-negrita padd-5">
+            <div class="">
+            <p class= "text-center 
+                       font-16 
+                       no-negrita 
+                       padd-5 
+                       flex-center">
                 <i class="fas fa-hand-holding-usd"></i> Comprá en cuotas y sin tarjeta de crédito
-            </h2>
+            </p>
+            </div>
         </div>
-         <nav class="padd-5"> 
-            <ul class="navbar ">
-               <li><a href="#ofertas"> Ofertas </a></li>
-               <li><a href="#">Tiendas Oficiales</a></li>
-               <li><a href="#">Vender</a></li>
-               <li><a href="#">Ayuda</a></li>
+
+         <nav class="padd-5 navbar flex-container"> 
+            <ul class="">
+                <li><a href="#ofertas"> Ofertas </a></li>
+                <li><a href="#">Tiendas Oficiales</a></li>
+                <li><a href="#">Vender</a></li>
+                <li><a href="#">Ayuda</a></li>                
+            </ul>    
+            <ul class="">
                 <li><a href="/register">Creá tu cuenta <i class="fas fa-id-card"></i></a></li>
-                <li><a href="#">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
+                <li><a href="/login">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
                 <li><a href="#">Mis compras <i class="fas fa-shopping-basket"></i></a></li>
-            
             </ul>
         </nav>
 

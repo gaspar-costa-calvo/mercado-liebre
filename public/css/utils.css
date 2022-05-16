@@ -1,4 +1,18 @@
+.padd-3-porcent {
+    padding: 3%;
+}
 
+.padd-5-porcent {
+    padding: 5%;
+}
+
+.padd-10-porcent {
+    padding: 10%;
+}
+
+.padd-15-porcent {
+    padding: 15%;
+}
 
 .padd-8 {
     padding: 8px;
@@ -54,6 +68,23 @@
 .marg-center {
     margin: 0 auto;
 }
+
+.marg-3-porcent {
+    margin: 3%;
+}
+
+.marg-5-porcent {
+    margin: 5%;
+}
+
+.marg-10-porcent {
+    margin: 10%;
+}
+
+.marg-15-porcent {
+    margin: 15%;
+}
+
 
 .marg-8 {
     margin: 8px;
@@ -134,6 +165,11 @@
 
 .input-border {
     border: 5px solid #ffffff;
+    border-radius: 5%;
+}
+
+.input-border-celeste {
+    border: 5px solid #1259c3;
     border-radius: 5%;
 }
 
