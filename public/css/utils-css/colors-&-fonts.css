@@ -1,0 +1,95 @@
+
+/*      COLORS      */
+.blanco {
+  color: white;
+}
+
+.amarillo {
+  color: #eac926;
+}
+
+.azul {
+  color: #03264c;
+}
+
+.celeste {
+  color: #1259c3;
+}
+
+.gris-oscuro {
+  color: #666;
+}
+
+.gris-claro {
+  color: #ebebeb;
+}
+
+.verde {
+  color: #39b54a;
+}
+/*------------------*/
+
+
+
+
+
+/*      BACKGROUNDS      */
+.bg-celeste {
+  background-color: #1259c3;
+}
+
+.bg-blanco {
+  background-color: white;
+}
+
+.bg-gris-claro {
+  background-color: #ebebeb;
+}
+
+.bg-amarillo {
+  background-color: #eac926;
+}
+/*------------------*/
+
+
+
+
+
+/*       FONTS SIZES      */
+.font-12 {
+  font-size: 12px;
+}
+
+.font-16 {
+  font-size: 16px;
+}
+
+.font-18 {
+  font-size: 18px;
+}
+
+.font-20 {
+  font-size: 20px;
+}
+
+.font-24 {
+  font-size: 24px;
+}
+
+.font-30 {
+  font-size: 30;
+}
+/*------------------*/
+
+
+
+
+
+/*      FONT DECO       */
+.negrita {
+  font-weight: bold;
+}
+
+.no-negrita {
+  font-weight: lighter;
+}

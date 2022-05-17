@@ -14,4 +14,8 @@
     .product {
         box-shadow: none;
     }
+
+    .navbar {
+        display: flex ;
+    }
 }

@@ -1,3 +1,10 @@
+
+/*      PADDING     */
+.pBT-15 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
 .padd-3-porcent {
     padding: 3%;
 }
@@ -14,6 +21,10 @@
     padding: 15%;
 }
 
+.padd-10 {
+    padding: 10px;
+}
+
 .padd-8 {
     padding: 8px;
 }
@@ -25,21 +36,13 @@
 .padd-15 {
     padding: 15px;
 }
-
-.linea-h-g {
-    border-top: 1px solid #ebebeb;
-}
-
-.bor-gris {
-    border: 5px solid #ebebeb;
-}
+/*------------------*/
 
 
-.pBT-15 {
-    padding-top: 15px;
-    padding-bottom: 15px;
-}
 
+
+
+/*      BORDES      */
 .bor-1 {
     border-style: solid;
     border-width: 1px;
@@ -48,10 +51,36 @@
 .bor-circle {
     border-radius: 50%;
 }
+/*------------------*/
+
+
+
+
+
+/*      WIDTH      */
+.max-w-50 {
+    max-width:fit-content;
+}
+
+.w-20 {
+    width: 20%;
+}
 
 
 .w-100 {
     width: 100%;
+}
+
+.w-30 {
+    width: 30%;
+}
+
+.w-75 {
+    width: 75%;
+}
+
+.w-80 {
+    width: 80%;
 }
 
 .w-90 {
@@ -64,7 +93,29 @@
 .w-25 {
     width: 25%;
 }
+/*------------------*/
 
+
+
+
+
+/*      BORDES       */
+.input-border {
+    border: 5px solid #ffffff;
+    border-radius: 5%;
+}
+
+.input-border-celeste {
+    border: 5px solid #1259c3;
+    border-radius: 5%;
+}
+ /*------------------*/
+
+
+
+
+
+/*       MARGEN        */
 .marg-center {
     margin: 0 auto;
 }
@@ -84,7 +135,6 @@
 .marg-15-porcent {
     margin: 15%;
 }
-
 
 .marg-8 {
     margin: 8px;
@@ -123,68 +173,39 @@
 .margr-15 {
     margin-right: 15px;
 }
+/*------------------*/
 
+
+
+
+
+/*      TEXT ALIGN       */
+.text-start {
+    text-align: start;
+}
 .text-center {
     text-align: center;
 }
+/*------------------*/
 
+
+
+
+
+/*      RANDOM      */
 .relative {
     position: relative;
 }
 
-.flex-container {
-    display: flex;
-    flex-wrap: wrap;
+.linea-h-g {
+    border-top: 1px solid #ebebeb;
 }
 
-.flex-center {
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+.bor-gris {
+    border: 5px solid #ebebeb;
 }
 
-.flex-start {
-    justify-content: flex-start;
+.display-none {
+    display: none;
 }
-
-.justify-center {
-    justify-content: center;
-}
-
-.flex-column {
-    flex-direction: column;
-}
-
-.flex-row {
-    flex-direction: row;
-}
-
-.space-between {
-    justify-content: space-between;
-}
-
-.input-border {
-    border: 5px solid #ffffff;
-    border-radius: 5%;
-}
-
-.input-border-celeste {
-    border: 5px solid #1259c3;
-    border-radius: 5%;
-}
-
-.grow-50 {
-    flex-grow: 0.5;
-}
-
-.no-wrap {
-    flex-wrap: nowrap;
-}
-
-.border-box {
-    box-sizing: border-box;
-}
-
-.text-start {
-    text-align: start;
-}
+/*------------------*/
