@@ -11,11 +11,12 @@
     
     <link href="/css/normalize.css" rel="stylesheet">
     <link href="/css/theme.css" rel="stylesheet">
-    <link href="\css\estilos-desktop.css" rel="stylesheet">
-    <link href="\css\estilos-tablet.css" rel="stylesheet">
     <link href="/css/utils-css/utils.css" rel="stylesheet">
     <link href="\css\utils-css\colors-&-fonts.css" rel="stylesheet">
     <link href="\css\utils-css\flex.css" rel="stylesheet">
+    <link href="\css\estilos-tablet.css" rel="stylesheet">
+    <link href="\css\estilos-desktop.css" rel="stylesheet">
+    
     
 
     
@@ -28,46 +29,63 @@
 </head>
 
 <body >
-    <header class="bg-amarillo">
-        <div class="flex-container wrap flex-center">
-            <h1 class="w-50 padd-10">
+    <header 
+        class="bg-amarillo"
+    >
+        <div 
+            class="flex-cont wrap flex-center"
+            >
+            <h1 
+            class="w-50 padd-10"
+            >
                 <img 
                     src = "/images/logo-mercado-liebre.svg" 
                     alt="Logo Mercado Liebre"
                 />
             </h1>
                         
-            <form class=" flex-container w-50 padd-10 flex-center" action="/" method="get">
+            <form 
+                class=" flex-cont w-50 padd-10 flex-center" 
+                action="/" 
+                method="get"
+            >
                 <div>
                     <input
                         class="w-100 flex-center"
-                         type="text" 
-                         placeholder="Buscar productos, marcas y más">
-                      <i class="fas fa-search "></i>
+                        type="text" 
+                        placeholder="Buscar productos, marcas y más"
+                    >
+                        <i 
+                            class="fas fa-search ">
+                        </i>
                     </input> 
                 </div>
             </form>
-            <p class= "text-center w-100 font-16">
-                <i class="fas fa-hand-holding-usd"></i> 
+            <p 
+                class= "text-center w-100 font-16"
+            >
+                <i 
+                    class="fas fa-hand-holding-usd">
+                </i> 
                 Comprá en cuotas y sin tarjeta de crédito
             </p>
         </div>
-
-         <nav class="w-100 padd-5 navbar"> 
-            <ul class="w-50">
-                <li><a href="#ofertas"> Ofertas </a></li>
-                <li><a href="#">Tiendas Oficiales</a></li>
-                <li><a href="#">Vender</a></li>
-                <li><a href="#">Ayuda</a></li>                
-            </ul>    
-            <ul class="w-50">
-                <li><a href="/register">Creá tu cuenta <i class="fas fa-id-card"></i></a></li>
-                <li><a href="/login">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
-                <li><a href="#">Mis compras <i class="fas fa-shopping-basket"></i></a></li>
-            </ul>
-        </nav>
-
-        <div class="burger-menu font-24 marg-15" >
+        <!--<div> -->
+            <nav class="display-none flex-cont w-100 space-between"> 
+                <ul class="navbar">
+                    <li><a href="#ofertas"> Ofertas </a></li>
+                    <li><a href="#">Tiendas Oficiales</a></li>
+                    <li><a href="#">Vender</a></li>
+                    <li><a href="#">Ayuda</a></li>                
+                </ul>    
+                <ul class="navbar">
+                    <li><a href="/register">Creá tu cuenta <i class="fas fa-id-card"></i></a></li>
+                    <li><a href="/login">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
+                    <li><a href="#">Mis compras <i class="fas fa-shopping-basket"></i></a></li>
+                </ul>
+            </nav>
+        <!--</div> --> 
+        <div class="burger-menu font-24 marg-15 burgerbox" >
             <i class="fas fa-bars "></i>
         </div>
 
@@ -76,134 +94,322 @@
     </header>
     
     <main class="main">
-        <section class="flex-container w-100 margb-15 wrap">
-            <h2 class="gris-oscuro font-24 pBT-15">Basado en tu última visita</h2>
-                <div class="">
-                    <article class="box-shadow margb-15 bg-blanco"  >        
-                        <img class="w-100 padd-8" src="/images/img-cafetera-moulinex.jpg" alt="Cafetera">   
-                            <div class="relative flex-container wrap linea-h-g margl-15"> 
-                                <i class="fas fa-truck truck-item verde"></i>    
-                                <p class="w-30 grow-30 font-20 margb-15 margt-15">$6.770</p>
-                                <p class="w-70 grow-70 verde font-18 padd-15">40% off</p>
-                                <h2 class="gris-oscuro no-negrita  margb-15 margt-15"> Cafetera Moulinex</h2>          
-                            </div>
-                    </article>
-                </div>
-                <div>
-                    <article class="product margb-15 bg-blanco"  >
-                        <img width="100%" src="/images/img-macbook-pro-2019.jpg" alt="Macbook pro 2019"> 
-                            <div class="relative flex-container wrap linea-h-g margl-15">
-                                <i class="fas fa-truck truck-item verde"></i>
-                                <p class="w-30 font-20 margb-15 margt-15">$230.000</p>
-                                <p class="w-70 paddl verde font-18 padd-15">20% off</p>
-                                <h2 class="gris-oscuro no-negrita  margb-15 margt-15">MacBook Pro 2019</h2> 
-                            </div>
-                    </article>
-                </div>
-                <div></div>
-                    <article class="product margb-15 bg-blanco"  >
-                        <img width="100%" src="\images\img-samsung-galaxy-s10.jpg" alt="Macbook pro 2019"> 
-                            <div class="relative flex-container wrap linea-h-g margl-15">
-                                <i class="fas fa-truck truck-item verde"></i>
-                                <p class="w-30 font-20 margb-15 margt-15">$70.500</p>
-                                <p class="w-70 paddl verde font-18 padd-15">10% off</p>
-                                <h2 class="gris-oscuro no-negrita  margb-15 margt-15">Samsung Galaxy S10</h3>
-                            </div>
-                                
-                    </article>     
-
-                <article class="product margb-15 bg-blanco"  >
-                    <img width="100%" src="\images\img-tv-samsung-smart.jpg" alt="Macbook pro 2019">
-                        <div  class="relative flex-container wrap linea-h-g margl-15">
-                             <i class="fas fa-truck truck-item verde"></i>
-                            <p class="w-30 font-20 margb-15 margt-15">$23.200</p>
-                            <p class="w-70 paddl verde font-18 padd-15">5% off</p>
-                            <h2 class="gris-oscuro no-negrita  margb-15 margt-15">SmartTv Samsung 43"</h3>
+        <section class="flex-cont w-100 margb-15">
+            <h2 
+                class="gris-oscuro font-24 pBT-15">
+                Basado en tu última visita
+            </h2>
+            <div 
+                class="w-100 product w-50-tablet w-25-desktop flex-cont">
+                <article 
+                    class=" box-shadow margb-15 bg-blanco"  >        
+                    <img 
+                        class="w-100 padd-8" 
+                        src="/images/img-cafetera-moulinex.jpg" 
+                        alt="Cafetera"
+                    >                                
+                    <div 
+                        class="linea-h-g w-100 margl-15 flex-cont wrap relative"
+                    >
+                        <i 
+                            class="fas fa-truck truck-item verde">
+                        </i>   
+                        <p 
+                            class="w-25 font-20 margb-15 margt-15">
+                            $6.770
+                        </p>
+                        <p 
+                            class="w-25 font-20 margb-15 margt-15">
+                            40% off
+                        </p>
+                        <h2 
+                            class="product-title gris-oscuro w-100 no-negrita margb-15 margt-15">
+                            Cafetera Moulinex
+                        </h2>          
                     </div>
-            </article>
+                </article>
+            </div>
+            <div 
+                class="w-100 w-50-tablet">
+                <article 
+                    class="box-shadow margb-15 bg-blanco"  >
+                    <img 
+                        class="w-100 padd-8" 
+                        src="/images/img-macbook-pro-2019.jpg" 
+                        alt="Macbook pro 2019"
+                    > 
+                    <div 
+                        class="linea-h-g w-100 margl-15  flex-cont wrap relative">
+                        <i 
+                            class="fas fa-truck truck-item verde">
+                        </i>
+                        <p 
+                            class="w-25 font-20 margb-15 margt-15">
+                            $230.000
+                        </p>
+                        <p 
+                            class="w-75 verde font-18 margb-15 margt-15">
+                            20% off
+                        </p>
+                        <h2 
+                            class="gris-oscuro w-100 no-negrita  margb-15 margt-15">
+                            MacBook Pro 2019
+                        </h2> 
+                    </div>
+                </article>
+            </div>
+            <div 
+                class="w-100 w-50-tablet flex-cont">
+                <article 
+                    class="box-shadow margb-15 bg-blanco"  >
+                    <img 
+                        class="w-100 padd-8" 
+                        src="\images\img-samsung-galaxy-s10.jpg" 
+                        alt="Macbook pro 2019"
+                    > 
+                    <div 
+                        class="linea-h-g w-100 margl-15 flex-cont wrap relative">
+                        <i 
+                            class="fas fa-truck truck-item verde">
+                        </i>
+                        <p 
+                            class=" w-25 font-20 margb-15 margt-15">
+                            $70.500
+                        </p>
+                        <p 
+                            class=" w-75 verde font-18 margb-15 margt-15">
+                            10% off
+                       </p>
+                        <h2 
+                            class="gris-oscuro w-100 no-negrita margb-15 margt-15">
+                            Samsung Galaxy S10
+                        </h3>
+                    </div>    
+                </article>     
+            </div>
+            <div 
+                class="w-100 w-50-tablet flex-cont">
+                <article 
+                    class="box-shadow margb-15 bg-blanco"  >
+                    <img 
+                        class="w-100 padd-8"   
+                        src="\images\img-tv-samsung-smart.jpg" 
+                        alt="Macbook pro 2019"
+                    >
+                    <div 
+                        class="linea-h-g w-100 margl-15 flex-cont wrap relative">
+                        <i 
+                            class="fas fa-truck truck-item verde">
+                        </i>
+                        <p 
+                            class="w-25 font-20 margb-15 margt-15">
+                            $23.200
+                        </p>
+                        <p 
+                            class="w-75 verde font-18 margb-15 margt-15">
+                            5% off
+                        </p>
+                        <h2 
+                            class="gris-oscuro w-100 no-negrita margb-15 margt-15">
+                            SmartTv Samsung 43"
+                        </h3>
+                    </div>
+                </article>
+            </div>
         </section>
 
-        <section class="">
-            <h2 class="gris-oscuro font-20 pBT-15">Ofertas</h2>
-                <article  class="product margb-15 bg-blanco"  >
-                    <img width="100%" src="\images\img-cafetera-moulinex.jpg" alt="Macbook pro 2019"> 
-                        <div  class="relative flex-container wrap linea-h-g margl-15"> 
-                             <i class="fas fa-truck truck-item verde"></i>
-                            <p class="w-30 font-20 margb-15 margt-15">$6.770</p>
-                            <p class="w-70 paddl verde font-18 padd-15">40% off</p>
-                            <h2 class="gris-oscuro no-negrita  margb-15 margt-15">Cafetera Moulinex</h3>
-                        </div>
+        <section 
+            class="flex-cont w-100 margb-15"
+        >
+            <h2 
+                class="gris-oscuro font-24 pBT-15">
+                Ofertas
+            </h2>
+            <div class="w-100 w-50-tablet flex-cont">
+                <article  
+                    class="box-shadow margb-15 bg-blanco"
+                >
+                    <img 
+                        class="w-100 padd-8" 
+                        src="\images\img-cafetera-moulinex.jpg" 
+                        alt="Macbook pro 2019"
+                    > 
+                    <div  
+                        class="linea-h-g w-100 margl-15 flex-cont wrap relative"
+                    > 
+                        <i 
+                            class="fas fa-truck truck-item verde">
+                        </i>
+                        <p 
+                            class="w-25 font-20 margb-15 margt-15">
+                            $6.770
+                        </p>
+                        <p 
+                            class="w-75 verde font-18 margb-15 margt-15">
+                            40% off
+                        </p>
+                        <h2 
+                            class="gris-oscuro w-100 no-negrita margb-15 margt-15">
+                            Cafetera Moulinex
+                        </h3>
+                    </div>
                 </article>
-
-                <article class="product margb-15 bg-blanco"  >
-                    <img width="100%" src="\images\img-macbook-pro-2019.jpg" alt="Macbook pro 2019"> 
-                        <div class="relative flex-container wrap linea-h-g margl-15"> 
-                             <i class="fas fa-truck truck-item verde"></i>
-                            <p class="w-30 font-20 margb-15 margt-15">$230.000</p>
-                            <p class="w-70 paddl verde font-18 padd-15">20% off</p> 
-                            <h2 class="gris-oscuro no-negrita  margb-15 margt-15">MacBook Pro 2019</h3>
-                        </div>
+            </div>
+            <div class="w-100 w-50-tablet flex-cont">
+                <article 
+                    class="box-shadow margb-15 bg-blanco"
+                >
+                    <img 
+                        class="w-100 padd-8" 
+                        src="\images\img-macbook-pro-2019.jpg" 
+                        alt="Macbook pro 2019"
+                        > 
+                    <div 
+                        class="linea-h-g w-100 margl-15 flex-cont wrap relative"
+                    > 
+                        <i 
+                            class="fas fa-truck truck-item verde">
+                        </i>
+                        <p 
+                            class="w-25 font-20 margb-15 margt-15">
+                            $230.000
+                        </p>
+                        <p 
+                            class="w-75 verde font-18 margb-15 margt-15">
+                            20% off
+                        </p> 
+                        <h2 
+                            class="gris-oscuro w-100 no-negrita margb-15 margt-15">
+                            MacBook Pro 2019
+                        </h3>
+                    </div>
                 </article>
-
-                <article class="product margb-15 bg-blanco"  >
-                        <img width="100%" src="\images\img-samsung-galaxy-s10.jpg" alt="Macbook pro 2019"> 
-                        <div class="relative flex-container wrap linea-h-g margl-15">
-                             <i class="fas fa-truck truck-item verde"></i>
-                             <p class="w-30 font-20 margb-15 margt-15">$70.500</p>
-                             <p class="w-70 paddl verde font-18 padd-15">10% off</p> 
-                            <h2 class="gris-oscuro no-negrita  margb-15 margt-15">Samsung Galaxy S10</h3>
-                        </div>
-                        </article>
-
-                <article class="product margb-15 bg-blanco"  >
-                        <img width="100%" src="\images\img-tv-samsung-smart.jpg" alt="Macbook pro 2019">
-                        <div  class="relative flex-container wrap linea-h-g margl-15">
-                             <i class="fas fa-truck truck-item verde"></i>
-                            <p class="w-30 font-20 margb-15 margt-15">$23.200</p>
-                            <p class="w-70 paddl verde font-18 padd-15">5% off</p>
-                            <h2 class="gris-oscuro no-negrita  margb-15 margt-15">SmartTv Samsung 43"</h3>
-                        </div>
+            </div>
+            <div 
+                class="w-100 w-50-tablet flex-cont"
+            >
+                <article 
+                    class="box-shadow margb-15 bg-blanco"
+                >
+                    <img 
+                        class="w-100 padd-8" 
+                        src="\images\img-samsung-galaxy-s10.jpg"
+                        alt="Macbook pro 2019"
+                    > 
+                    <div 
+                        class="linea-h-g w-100 margl-15 flex-cont wrap relative"
+                    >
+                        <i 
+                            class="fas fa-truck truck-item verde">
+                        </i>
+                        <p 
+                            class="w-25 font-20 margb-15 margt-15"">
+                            $70.500
+                        </p>
+                        <p 
+                            class="w-75 verde font-18 margb-15 margt-15">
+                            10% off
+                        </p> 
+                        <h2 
+                            class="gris-oscuro w-100 no-negrita margb-15 margt-15">
+                            Samsung Galaxy S10
+                        </h2>
+                    </div>
                 </article>
+            </div>
+            <div>
+                <article 
+                    class="box-shadow margb-15 bg-blanco"
+                >
+                    <img 
+                        class="w-100 padd-8" 
+                        src="\images\img-tv-samsung-smart.jpg" 
+                        alt="Macbook pro 2019">
+                    <div  
+                        class="linea-h-g w-100 margl-15 flex-cont wrap relative"
+                    >
+                        <i 
+                            class="fas fa-truck truck-item verde">
+                        </i>
+                        <p 
+                            class="w-25 font-20 margb-15 margt-15">
+                                $23.200
+                        </p>
+                        <p 
+                            class="w-70 paddl verde font-18 padd-15">
+                            5% off
+                        </p>
+                        <h2 
+                            class="gris-oscuro w-100 no-negrita margb-15 margt-15">
+                            SmartTv Samsung 43"
+                         </h2>
+                    </div>
+                </article>
+            </div>
         </section>
     
 </main>
 
 <footer class="bg-footer">
-    <section class="flex-container flex-column marg-15 flex-center">
-      <article class=" footer-article marg-8">
-        <i class="fas fa-credit-card azul footer-item"></i>
-        <p 
-          class="negrita gris-oscuro font-20 ">
-            Pagá con tarjeta o en efectivo
-        </p>
-        <p class="gris-oscuro font-16">
-          Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o
-          efectivo en puntos de pago. ¡Y siempre es seguro!
-        </p>
-      </article>
+        <section 
+                class="flex-cont flex-column marg-15 flex-center"
+            >
+            <article 
+                class=" footer-article marg-8"
+            >
+                <i 
+                    class="fas fa-credit-card azul footer-item">
+                </i>
+                <p 
+                    class="negrita gris-oscuro font-20 ">
+                    Pagá con tarjeta o en efectivo
+                </p>
+                <p 
+                    class="gris-oscuro font-16">
+                    Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o
+                    efectivo en puntos de pago. ¡Y siempre es seguro!
+                </p>
+            </article>
 
-      <article class=" footer-article marg-8">
-        <i class="fas fa-gift azul footer-item"></i>
-        <p 
-          class="negrita gris-oscuro font-20">
-            Envío gratis desde $ 2.500</p>
-        <p class="gris-oscuro font-16">
-          Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en
-          miles de productos. Es un beneficio de Mercado Puntos.
-        </p>
-      </article>
+            <article 
+                class=" footer-article marg-8"
+            >
+                <i 
+                    class="fas fa-gift azul footer-item">
+                </i>
+                <p 
+                    class="negrita gris-oscuro font-20">
+                    Envío gratis desde $ 2.500
+                </p>
+                <p 
+                    class="gris-oscuro font-16">
+                    Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en
+                    miles de productos. Es un beneficio de Mercado Puntos.
+                </p>
+            </article>
 
-      <article class=" footer-article marg-8">
-        <i class="fas fa-user-shield azul footer-item"></i>
-        <p class="negrita gris-oscuro font-20">Seguridad, de principio a fin</p>
-        <p class="gris-oscuro font-16">
-          ¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no
-          puedas hacer, porque estás siempre protegid@.
-        </p>
-      </article>
+            <article 
+                class=" footer-article marg-8"
+            >
+                <i 
+                    class="fas fa-user-shield azul footer-item">
+                </i>
+                <p 
+                    class="negrita gris-oscuro font-20">
+                    Seguridad, de principio a fin
+                </p>
+                <p
+                    class="gris-oscuro font-16">
+                    ¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no
+                    puedas hacer, porque estás siempre protegid@.
+                </p>
+            </article>
 
-      <p class="margb-8 margt-8 text-start">Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
-    </section>
+                <p 
+                    class="margb-8 margt-8 text-start">
+                    Copyright © 1999-2020 MercadoLiebre S.R.L.
+                </p>
+        </section>
   </footer>
 
 </body>

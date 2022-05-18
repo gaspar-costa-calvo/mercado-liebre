@@ -2,6 +2,8 @@
     flex-grow: 0.5;
 }
 
+
+
 .grow-70 {
     flex-grow: 0.7;
 }
@@ -9,6 +11,7 @@
 .grow-30 {
     flex-grow: 0.3;
 }
+
 
 .grow-0 {
     flex-grow: 0.0;
@@ -34,7 +37,7 @@
     justify-content: center;
 }
 
-.flex-container {
+.flex-cont {
     display: flex;
     flex-wrap: wrap;
 }
@@ -49,7 +52,11 @@
     text-align: center;
 }
 
-.flex-start {
+.flex-start-x {
+    justify-content: flex-start;
+}
+
+.flex-end-x {
     justify-content: flex-start;
 }
 
@@ -61,6 +68,18 @@
     flex-wrap: wrap;
 }
 
-.flex-end {
+.flex-end-y {
     align-items: flex-end;
+}
+
+.flex-start-y {
+    align-items: flex-start;
+}
+
+.text-start-left {
+    text-align: left;
+}
+
+.text-start-right {
+    text-align: right;
 }
