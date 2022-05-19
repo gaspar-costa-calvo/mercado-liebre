@@ -3,24 +3,56 @@
         display: none;
     }
 
-    .logo-ml {
-        flex-grow: 0.25;
+    .navbar {
+            display: flex ;
     }
-    
 
-    .product {
+   .w-25-desktop {
+       width: 25%;
+   }
+
+    .product-title {
+        display: hi;
+    }
+
+    /*
+    .product:hover .product-title {
+        display: flex;
+    } */
+    
+    
+    .box-shadow {
         box-shadow: none;
     }
 
-    .product-title {
-        display: none;
+    /*
+    .product:hover .box-shadow {
+        display: flex;
+    } */
+
+    .product:hover .product-title{
+        display: contents;
+        transition: 0.3;
+    }
+    .product:hover{
+       box-shadow: 0px 0px 10px rgb(100, 100, 100);
+       transition: 0.3; 
     }
 
-    .product:hover .product-title {
+    .fx-cont-desktop {
         display: flex;
     }
 
-    .navbar {
-        display: flex ;
+    
+    .fx-cont-wrap-desktop {
+        display: flex;
+        flex-wrap: wrap;
     }
+
+    .text-start-right-desktop {
+        text-align: right;
+    }
+
+
+    
 }

@@ -5,16 +5,18 @@ l<!DOCTYPE html>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Document</title>
-    
+
+
         <link href="/css/normalize.css" rel="stylesheet">
         <link href="/css/theme.css" rel="stylesheet">
-        <link href="\css\estilos-desktop.css" rel="stylesheet">
-        <link href="\css\estilos-tablet.css" rel="stylesheet">
-        <link href="/css/utils-css/utils.css" rel="stylesheet">
+        <link href="/css/login.css" rel="stylesheet" />
+
+        <link href="\css\utils-css\utils.css" rel="stylesheet">
         <link href="\css\utils-css\colors-&-fonts.css" rel="stylesheet">
         <link href="\css\utils-css\flex.css" rel="stylesheet">
-        <link href="/css/register.css" rel="stylesheet" />
-        <link href="/css/login.css" rel="stylesheet" />
+        <!----> <link href="\css\estilos-tablet.css" rel="stylesheet">
+        <link href="\css\estilos-desktop.css" rel="stylesheet"> 
+        
 
 
     
@@ -32,47 +34,71 @@ l<!DOCTYPE html>
 
       <body>
 
-        <header class="bg-amarillo">
-            <div class="">
-              <img
-                class="logo-ml"
-                src="/images/logo-mercado-liebre.svg"
-                alt="Logo Mercado Liebre"
-                width="100%"
-              />
-              <div class="flex-container padd-8 font-16">
-                <div class=""><p>barra de búsqueda</p></div>
-                <i class="fas fa-search"></i>
-              </div>
-              <h2 class="text-center font-16 no-negrita padd-5">
-                <i class="fas fa-hand-holding-usd"></i> Comprá en cuotas y sin tarjeta
-                de crédito
-              </h2>
-            </div>
-            <nav class="padd-5">
-              <ul class="navbar">
-                <li><a href="#ofertas"> Ofertas </a></li>
-                <li><a href="#">Tiendas Oficiales</a></li>
-                <li><a href="#">Vender</a></li>
-                <li><a href="#">Ayuda</a></li>
-                <li>
-                  <a href="/register"
-                    >Creá tu cuenta <i class="fas fa-id-card"></i
-                  ></a>
-                </li>
-                <li>
-                  <a href="/login">Ingresá <i class="fas fa-sign-in-alt"></i></a>
-                </li>
-                <li>
-                  <a href="#">Mis compras <i class="fas fa-shopping-basket"></i></a>
-                </li>
-              </ul>
+        <header 
+        class="bg-amarillo padd-10"
+    >
+        <!-- HEADER TOP --> <div 
+            class="flex-cont-wrap align-center"
+            >
+            <h1 
+            class="w-50 w-33-tablet w-33-desktop"
+            >
+                <img
+                    src = "/images/logo-mercado-liebre.svg" 
+                    alt="Logo Mercado Liebre"
+                />
+            </h1>
+                        
+            <form 
+                class=" padd-10 flex-cont w-50 w-33-tablet w-33-desktop" 
+                action="/" 
+                method="get"
+            >
+                <div class="w-100">
+                    <input
+                        class="w-90 flex-center"
+                        type="text" 
+                        placeholder="Buscar productos, marcas y más"
+                    >
+                        <i 
+                            class="fas fa-search ">
+                        </i>
+                    </input> 
+                </div>
+            </form>
+            <p 
+                class= "text-center w-100 w-33-tablet w-33-desktop"
+            >
+                <i 
+                    class="fas fa-hand-holding-usd">
+                </i> 
+                Comprá en cuotas y sin tarjeta de crédito
+            </p>
+        </div>
+        <!-- HEADER BOT -->
+        <div>
+            <nav class="display-none w-100-tablet fx-cont-wrap-tablet space-between-tablet "> 
+                <ul class="margb-8 margt-8 navbar-tablet">
+                    <li><a href="#ofertas"> Ofertas </a></li>
+                    <li><a href="#">Tiendas Oficiales</a></li>
+                    <li><a href="#">Vender</a></li>
+                    <li><a href="#">Ayuda</a></li>                
+                </ul>    
+                <ul class="margb-8 margt-8 navbar-tablet">
+                    <li><a href="/register">Creá tu cuenta <i class="fas fa-id-card"></i></a></li>
+                    <li><a href="/login">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
+                    <li><a href="#">Mis compras <i class="fas fa-shopping-basket"></i></a></li>
+                </ul>
             </nav>
-      
-            <div class="burger-menu font-24 margb-8">
-              <i class="fas fa-bars"></i>
-            </div>
-          </header>
+         </div>
+         <!--  BURGER MENU  -->
+        <div class="burger-menu font-24 marg-15 burgerbox" >
+            <i class="fas fa-bars "></i>
+        </div>
+    
+    <img class="w-100" src="\images\img-home-banner.jpg" alt=" Promocion fiestas"/>
+        
+    </header>
 
           <main class="bg-gris-claro flex-container flex-column flex-center">
             <form class="w-100" action="/" method="get">
@@ -97,8 +123,8 @@ l<!DOCTYPE html>
           </main>
 
           <footer class="bg-footer">
-            <section class="flex-container flex-column marg-15 flex-center">
-              <article class=" footer-article marg-8">
+            <section class="flex-cont-wrap marg-15 flex-center">
+              <article class="footer-article marg-8 w-100 w-33-desktop  ">
                 <i class="fas fa-credit-card azul footer-item"></i>
                 <p 
                   class="negrita gris-oscuro font-20 ">
@@ -110,7 +136,7 @@ l<!DOCTYPE html>
                 </p>
               </article>
       
-              <article class=" footer-article marg-8">
+              <article class="footer-article marg-8 w-100 w-33-desktop">
                 <i class="fas fa-gift azul footer-item"></i>
                 <p 
                   class="negrita gris-oscuro font-20">
@@ -121,7 +147,7 @@ l<!DOCTYPE html>
                 </p>
               </article>
       
-              <article class=" footer-article marg-8">
+              <article class="footer-article marg-8 w-100 w-33-desktop">
                 <i class="fas fa-user-shield azul footer-item"></i>
                 <p class="negrita gris-oscuro font-20">Seguridad, de principio a fin</p>
                 <p class="gris-oscuro font-16">
@@ -130,7 +156,9 @@ l<!DOCTYPE html>
                 </p>
               </article>
       
-              <p class="margb-8 margt-8 text-start">Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
+              <div class="w-100 flex-cont">
+                <p class="margb-8 margt-8 flex-start-x">Copyright © 1999-2020 MercadoLiebre S.R.L.</p> 
+              </div>
             </section>
           </footer>
 

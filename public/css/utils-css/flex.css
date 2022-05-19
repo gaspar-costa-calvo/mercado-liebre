@@ -39,6 +39,10 @@
 
 .flex-cont {
     display: flex;
+}
+
+.flex-cont-wrap {
+    display: flex;
     flex-wrap: wrap;
 }
 

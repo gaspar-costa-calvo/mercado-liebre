@@ -8,13 +8,15 @@
 
     <link href="/css/normalize.css" rel="stylesheet">
     <link href="/css/theme.css" rel="stylesheet">
-    <link href="\css\estilos-desktop.css" rel="stylesheet">
-    <link href="\css\estilos-tablet.css" rel="stylesheet">
-    <link href="/css/utils-css/utils.css" rel="stylesheet">
+    <link href="/css/register.css" rel="stylesheet">
+    <link href="\css\utils-css\utils.css" rel="stylesheet">
     <link href="\css\utils-css\colors-&-fonts.css" rel="stylesheet">
     <link href="\css\utils-css\flex.css" rel="stylesheet">
-    <link href="/css/register.css" rel="stylesheet" />
-
+    <!----> <link href="\css\estilos-tablet.css" rel="stylesheet">
+    <link href="\css\estilos-desktop.css" rel="stylesheet"> 
+    
+    
+ 
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
       rel="stylesheet"
@@ -26,56 +28,81 @@
       rel="stylesheet"
     />
   </head>
+
+
   <body>
-    <header class="bg-amarillo">
-      <div class="">
-        <img
-          class="logo-ml"
-          src="/images/logo-mercado-liebre.svg"
-          alt="Logo Mercado Liebre"
-          width="100%"
-        />
-        <div class="flex-container padd-8 font-16">
-          <div class=""><p>barra de búsqueda</p></div>
-          <i class="fas fa-search"></i>
-        </div>
-        <h2 class="text-center font-16 no-negrita padd-5">
-          <i class="fas fa-hand-holding-usd"></i> Comprá en cuotas y sin tarjeta
-          de crédito
-        </h2>
-      </div>
-      <nav class="padd-5">
-        <ul class="navbar">
-          <li><a href="#ofertas"> Ofertas </a></li>
-          <li><a href="#">Tiendas Oficiales</a></li>
-          <li><a href="#">Vender</a></li>
-          <li><a href="#">Ayuda</a></li>
-          <li>
-            <a href="/register"
-              >Creá tu cuenta <i class="fas fa-id-card"></i
-            ></a>
-          </li>
-          <li>
-            <a href="/login">Ingresá <i class="fas fa-sign-in-alt"></i></a>
-          </li>
-          <li>
-            <a href="#">Mis compras <i class="fas fa-shopping-basket"></i></a>
-          </li>
-        </ul>
-      </nav>
+    <header 
+    class="bg-amarillo padd-10"
+>
+    <!-- HEADER TOP --> <div 
+        class="flex-cont-wrap align-center"
+        >
+        <h1 
+        class="w-50 w-33-tablet w-33-desktop"
+        >
+            <img
+                src = "/images/logo-mercado-liebre.svg" 
+                alt="Logo Mercado Liebre"
+            />
+        </h1>
+                    
+        <form 
+            class=" padd-10 flex-cont w-50 w-33-tablet w-33-desktop" 
+            action="/" 
+            method="get"
+        >
+            <div class="w-100">
+                <input
+                    class="w-90 flex-center"
+                    type="text" 
+                    placeholder="Buscar productos, marcas y más"
+                >
+                    <i 
+                        class="fas fa-search ">
+                    </i>
+                </input> 
+            </div>
+        </form>
+        <p 
+            class= "text-center w-100 w-33-tablet w-33-desktop"
+        >
+            <i 
+                class="fas fa-hand-holding-usd">
+            </i> 
+            Comprá en cuotas y sin tarjeta de crédito
+        </p>
+    </div>
+    <!-- HEADER BOT -->
+    <div>
+        <nav class="display-none w-100-tablet fx-cont-wrap-tablet space-between-tablet "> 
+            <ul class="margb-8 margt-8 navbar-tablet">
+                <li><a href="#ofertas"> Ofertas </a></li>
+                <li><a href="#">Tiendas Oficiales</a></li>
+                <li><a href="#">Vender</a></li>
+                <li><a href="#">Ayuda</a></li>                
+            </ul>    
+            <ul class="margb-8 margt-8 navbar-tablet">
+                <li><a href="/register">Creá tu cuenta <i class="fas fa-id-card"></i></a></li>
+                <li><a href="/login">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
+                <li><a href="#">Mis compras <i class="fas fa-shopping-basket"></i></a></li>
+            </ul>
+        </nav>
+     </div>
+     <!--  BURGER MENU  -->
+    <div class="burger-menu font-24 marg-15 burgerbox" >
+        <i class="fas fa-bars "></i>
+    </div>
 
-      <div class="burger-menu font-24 margb-8">
-        <i class="fas fa-bars"></i>
-      </div>
-    </header>
+<img class="w-100" src="\images\img-home-banner.jpg" alt=" Promocion fiestas"/>
+    
+</header>
 
-
-    <main class="flex-container flex-center bg-gris-claro w-100">
-      <form class="w-90  flex-container flex-column" action="/" method="get">
-        <div class="marg-15">
-          <label for="nombre">
+    <main class="bg-gris-claro">
+      <form class=" w-100 flex-cont flex-column flex-center " action="/" method="get">
+        <div class="marg-3-porcent w-100">
+          <label class="font-24 w-100  " for="nombre">
               <input
-                class="w-100 font-24 input-border padd-5" 
+                class="input-border w-80  " 
                 placeholder="Nombre y apellido"
                 type="text" 
                 name="Nombre y apellido" 
@@ -83,10 +110,10 @@
               />
           </label>
         </div>
-        <div class="marg-15">
-          <label for="n-user">
+        <div class="marg-3-porcent w-100 ">
+          <label class="w-100" for="n-user">
             <input 
-                class="w-100 font-24 input-border padd-5" 
+                class="input-border w-80" 
                 placeholder="Nombre de Usuari@"
                 type="text"
                 name="Nombre de usuari@"
@@ -94,11 +121,11 @@
             />
           </label>
         </div>
-        <div class="marg-15 ">
-          <label for="e-mail">
+        <div class="marg-3-porcent w-100 ">
+          <label  class="w-100" for="e-mail">
             <input 
-                class="w-100 font-24 input-border padd-5" 
-                placeholder="Correo electronico"
+                class=" input-border w-80   " 
+                placeholder="Correo electronico"fx-cont-wrap         
                 type="text"
                 name="Correo electrico"
                 id="e-mail"
@@ -106,16 +133,16 @@
           </label>
         </div>
 
-        <div class="font-24 w-90 margb-8 margt-8 flex-container flex-row">
-            <label class="space-between">
+        <div class="marg-3-porcent w-100 flex-center ">
+            <label class="marg-center w-80 flex-cont  space-between ">
               <input 
-                  class="w-25 input-border grow-50 padd-5 "
+                  class=" input-border "
                   placeholder="Contraseña" 
                   type="password" 
                   name="contraseña" 
               />
               <input 
-                  class="w-25 input-border grow-50 padd-5"
+                  class="   input-border     "
                   placeholder="Confirmar Contraseña"
                   type="password"
                   name="confirmar-contraseña"
@@ -123,24 +150,33 @@
             </label>
         </div>
 
-      <div class="w-90 ">
-        <p class="font-20 negrita margb-8 margt-8 text-start">Fecha de nacimiento</p>
+      <div class=" marg-3-porcent w-80 flex-center ">
+        <p class="text-start ">Fecha de nacimiento</p>
           <label for="birth-date">
             <input
-                class="w-100 margt-8 font-16 input-border padd-5"
+                class="marg-3-porcent input-border w-100"
                 type="date"
                 name="Fecha de nacimiento"
                 id="birth-date"
             />
           </label>
+          <label for="domicilio">
+            <input
+                class="input-border marg-3-porcent  w-100"
+                placeholder="Domicilio"
+                type="text"
+                name="Domicilio"
+                id="domicilio"
+            />
+          </label>
         </div>
 
-        <div >
-          <p class="font-20 negrita margb-8 margt-8 text-start">Perfil de usuario</p>
-            <div class="font-16 text-start">
+        <div class=" marg-3-porcent w-80 flex-center " >
+          <p class=" text-start ">Perfil de usuario</p>
+            <div class=" marg-center w-80 flex-cont space-between">
               <label class="padd-5" for="perfil-user-buy">
                 <input
-                  class=""
+                  class="     "
                   type="radio"
                   name="perfil-de-usuario"
                   value="Comprar"
@@ -148,7 +184,7 @@
                 />
                 Comprador</label>
 
-              <label class="padd-5" for="perfil-user-sell">
+              <label class="       " for="perfil-user-sell">
                 <input
                   type="radio"
                   name="perfil-de-usuario"
@@ -161,10 +197,10 @@
         </div>
 
       
-      <div class="text-start">
-        <p class="font-20 negrita margt-8">Intereses</p>
-          <div class="font-16 flex-container flex-column">
-            <label class="padd-5" for="electro">
+      <div class=" marg-3-porcent w-80  ">
+        <p class=" text-start   ">Intereses</p>
+          <div class=" marg-center w-80 flex-cont flex-column text-start">
+            <label class="         " for="electro">
               <input
                 type="checkbox"
                 name="categorias-interes"
@@ -173,7 +209,7 @@
               />Electro
             </label>
         
-            <label class="padd-5" for="moda">
+            <label class="          " for="moda">
               <input
                 
                 type="checkbox"
@@ -183,7 +219,7 @@
               />moda
             </label>
         
-            <label class="padd-5" for="home">
+            <label class="        " for="home">
               <input
                 
                 type="checkbox"
@@ -193,7 +229,7 @@
               />Hogar
             </label>
         
-            <label class="padd-5" for="toys">
+            <label class="          " for="toys">
               <input
                 
                 type="checkbox"
@@ -203,7 +239,7 @@
               />Juguetería
             </label>
 
-            <label class="padd-5" for="healthy-life">
+            <label class="        " for="healthy-life">
               <input
                 
                 type="checkbox"
@@ -214,9 +250,9 @@
         </div>
       </div>
           
-      <div>
-        <p class="font-20 negrita margb-8 margt-8 text-start">Foto de perfil</p>
-        <label for="perfil-picture">        
+      <div class=" marg-3-porcent w-80 ">
+        <p class=" text-start  ">Foto de perfil</p>
+        <label class=" marg-center w-80 flex-cont " for="perfil-picture">        
             <input 
               type="file" 
               name="foto-perfil" 
@@ -226,13 +262,13 @@
       </label>
       </div>
 
-      <div class="w-50 marg-15">
+      <div class=" marg-3-porcent w-80 flex-cont-wrap flex-center">
         <button
-            class="w-100"
+            class="blanco marg-3-porcent flex-center bg-celeste input-border-celeste w-80 "
             type="submit">Enviar
         </button>
         <button
-            class="w-100"
+            class="blanco marg-3-porcent bg-celeste input-border-celeste w-80 "
             type="reset">Borrar
         </button>
       </div>
@@ -240,7 +276,7 @@
     </main>
 
     <footer class="bg-footer">
-      <section class="flex-container flex-column marg-15 flex-center">
+      <section class="flex-cont flex-column marg-15 flex-center">
         <article class=" footer-article marg-8">
           <i class="fas fa-credit-card azul footer-item"></i>
           <p 
@@ -273,7 +309,9 @@
           </p>
         </article>
 
-        <p class="margb-8 margt-8 text-start">Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
+        <div class="w-100 flex-cont">
+          <p class="margb-8 margt-8 flex-start-x">Copyright © 1999-2020 MercadoLiebre S.R.L.</p> 
+        </div>
       </section>
     </footer>
   </body>

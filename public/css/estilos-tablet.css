@@ -2,20 +2,47 @@
     .burgerbox{
         display: none;
     }
+
+    .w-33-tablet {
+        width: 33%;
+    }
     .w-50-tablet {
         width: 50%;
     }
 
-    .product-title {
-        display: none;
+    .w-100-tablet {
+        width: 100%;
     }
 
-    .product:hover .product-title {
+   
+    .fx-cont-tablet {
         display: flex;
     }
 
+    .fx-cont-wrap-tablet {
+        display: flex;
+        flex-wrap: wrap;
 
+    }
 
+    .space-between-tablet {
+        justify-content: space-between;
+    }
+
+    .space-around-tablet {
+        justify-content: space-around;
+    }
+
+        
+    .navbar-tablet li {
+        list-style: none;
+        display: inline-block;
+    }
+
+    .navbar-tablet li a  {
+        color: #000;
+        text-decoration: none;
+    } 
 
 
 

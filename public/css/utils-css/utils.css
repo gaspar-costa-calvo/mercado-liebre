@@ -75,6 +75,10 @@
     width: 30%;
 }
 
+.w-40 {
+    width: 40%;
+}
+
 .w-75 {
     width: 75%;
 }
@@ -192,6 +196,19 @@
 
 
 
+/*      DISPLAYS        */
+.display-none {
+    display: none;
+}
+
+.in-line-block {
+    display: inline-block
+}
+
+
+
+
+
 /*      RANDOM      */
 .relative {
     position: relative;
@@ -205,7 +222,5 @@
     border: 5px solid #ebebeb;
 }
 
-.display-none {
-    display: none;
-}
+
 /*------------------*/
