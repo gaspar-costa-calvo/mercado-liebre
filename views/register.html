@@ -136,13 +136,13 @@
         <div class="marg-3-porcent w-100 flex-center ">
             <label class="marg-center w-80 flex-cont  space-between ">
               <input 
-                  class=" input-border "
+                  class="w-49 input-border "
                   placeholder="Contraseña" 
                   type="password" 
                   name="contraseña" 
               />
               <input 
-                  class="   input-border     "
+                  class=" w-49  input-border     "
                   placeholder="Confirmar Contraseña"
                   type="password"
                   name="confirmar-contraseña"
@@ -150,11 +150,11 @@
             </label>
         </div>
 
-      <div class=" marg-3-porcent w-80 flex-center ">
-        <p class="text-start ">Fecha de nacimiento</p>
+      <div class=" marg-3-porcent w-100 flex-center ">
+        <p class="font-16 marg-center w-80 text-start ">Fecha de nacimiento</p>
           <label for="birth-date">
             <input
-                class="marg-3-porcent input-border w-100"
+                class="marg-3-porcent input-border w-80"
                 type="date"
                 name="Fecha de nacimiento"
                 id="birth-date"
@@ -162,7 +162,7 @@
           </label>
           <label for="domicilio">
             <input
-                class="input-border marg-3-porcent  w-100"
+                class="input-border marg-3-porcent  w-80"
                 placeholder="Domicilio"
                 type="text"
                 name="Domicilio"
@@ -172,11 +172,11 @@
         </div>
 
         <div class=" marg-3-porcent w-80 flex-center " >
-          <p class=" text-start ">Perfil de usuario</p>
+          <p class="font-16 text-start ">Perfil de usuario</p>
             <div class=" marg-center w-80 flex-cont space-between">
               <label class="padd-5" for="perfil-user-buy">
                 <input
-                  class="     "
+                  class=" w-33 "
                   type="radio"
                   name="perfil-de-usuario"
                   value="Comprar"
@@ -184,7 +184,7 @@
                 />
                 Comprador</label>
 
-              <label class="       " for="perfil-user-sell">
+              <label class=" w-33 " for="perfil-user-sell">
                 <input
                   type="radio"
                   name="perfil-de-usuario"
@@ -192,6 +192,16 @@
                   id="perfil-user-sell"
                 />
                 Vendedor</label>
+
+                <label class="       " for="perfil-user-both">
+                  <input
+                    type="radio"
+                    name="perfil-de-usuario"
+                    value="Vender y Comprar"
+                    id="perfil-user-both"
+                  />
+                  Vendedor y Comprador</label>
+                
 
             </div>
         </div>
