@@ -3,12 +3,23 @@
         display: none;
     }
 
-    .navbar {
-            display: flex ;
+    .navbar-desktop li {
+        list-style: none;
+        display: inline-block;
     }
+
+    .navbar-desktop li a  {
+        color: #000;
+        text-decoration: none;
+    } 
+
 
    .w-25-desktop {
        width: 25%;
+   }
+
+   .w-30-desktop {
+       width: 30%;
    }
 
     .product-title {
@@ -53,6 +64,8 @@
         text-align: right;
     }
 
-
+    .space-between-desktop {
+        justify-content: space-between;
+    }
     
 }

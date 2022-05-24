@@ -1,6 +1,6 @@
 @media (min-width: 481px) {
     .burgerbox{
-        display: none;
+        margin: 0px 0px 15px 0px;
     }
 
     .w-33-tablet {
@@ -34,16 +34,7 @@
     }
 
         
-    .navbar-tablet li {
-        list-style: none;
-        display: inline-block;
-    }
-
-    .navbar-tablet li a  {
-        color: #000;
-        text-decoration: none;
-    } 
-
+ 
 
 
     /*
