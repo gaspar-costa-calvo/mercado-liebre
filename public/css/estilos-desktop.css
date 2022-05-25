@@ -13,6 +13,71 @@
         text-decoration: none;
     } 
 
+    .truck-item:hover {
+        animation: rotate 3s infinite;
+    }
+
+    @keyframes rotate {
+        0% {
+            transform: rotate(0deg);
+        }
+        5% {
+            transform: rotate(-10deg);
+        }
+        10% {
+            transform: rotate(10deg);
+        }
+        15% {
+            transform: rotate(-10deg);
+        }
+        20% {
+            transform: rotate(10deg);
+        }
+        25% {
+            transform: rotate(-10deg);
+        }
+        30% {
+            transform: rotate(10deg);
+        }
+        35% {
+            transform: rotate(-10deg);
+        }
+        40% {
+            transform: rotate(10deg);
+        }
+        45% {
+            transform: rotate(-10deg);
+        }
+        50% {
+            transform: rotate(10deg);
+        }
+        55% {
+            transform: rotate(-10deg);
+        }
+        60% {
+            transform: rotate(10deg);
+        }
+        65% {
+            transform: rotate(-10deg);
+        }
+        70% {
+            transform: rotate(10deg);
+        }
+        75% {
+            transform: rotate(-10deg);
+        }
+        80% {
+            transform: rotate(10deg);
+        }
+        90% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(0deg);
+        }
+        
+    }
+   
 
    .w-25-desktop {
        width: 25%;
@@ -23,31 +88,23 @@
    }
 
     .product-title {
-        display: hi;
+        display: none;
     }
 
-    /*
-    .product:hover .product-title {
-        display: flex;
-    } */
-    
-    
     .box-shadow {
         box-shadow: none;
     }
 
-    /*
-    .product:hover .box-shadow {
-        display: flex;
-    } */
-
     .product:hover .product-title{
-        display: contents;
-        transition: 0.3;
+
+        display: flex;
+        transition-duration: 1s;
     }
+
     .product:hover{
+       transition-duration: 1s;
        box-shadow: 0px 0px 10px rgb(100, 100, 100);
-       transition: 0.3; 
+        
     }
 
     .fx-cont-desktop {
@@ -67,5 +124,35 @@
     .space-between-desktop {
         justify-content: space-between;
     }
-    
+
+    .footer-item {
+        padding: 8px;
+    }
+    .footer-item:hover {
+        animation: border 2s ;
+    }
+
+    @keyframes border {
+        100%{
+            border: 3px solid #03264c;
+        border-radius: 50%;
+    }
+    }
+
+
+    /* .element {
+        animation: rotate 2s infinite;
+        background-color:#eee;
+        width: 200px;
+        height: 200px;
+      }
+      
+      @keyframes rotate {
+        0% {
+          transform: rotate(-45deg)
+        }
+        100% {
+          transform: rotate(45deg)
+        }
+      }  */
 }

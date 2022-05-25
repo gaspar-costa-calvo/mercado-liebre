@@ -72,11 +72,16 @@ body {
     padding-bottom: 15px;
     padding-top: 15px;
     width: 100%;
+    position: relative;
+    top: 25vh;
+    
 }
 
-.bg-footer {
+.footer {
     background-color: white;
     background-size: 50px;
+    position: relative;
+    top: 25vh;
 }
 
 .titulo-gris {

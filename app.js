@@ -3,11 +3,15 @@ const express = require("express");
 
 const app = express();
 
-const PORT = 3000;
+const PORT = process.env.PORT || 3000
 
 app.listen(PORT, () => {
     console.log("Corriendo" + PORT);
 });
+
+app.listen (PORT, ()=> {
+       console.log ('El Servidor esta corriendo en el puerto ' + PORT);
+      });
 
 app.use(express.static(path.join(__dirname, "public")))
 

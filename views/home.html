@@ -29,8 +29,9 @@
 
 <body>
     <header 
-        class="bg-amarillo  w-100"
+        class="bg-amarillo max-h-860 w-100 fixed z-index-1 "
     >
+        <div class="">
         <!-- HEADER TOP -->
          <div 
             class="flex-cont-wrap align-center space-between padd-10"
@@ -71,7 +72,7 @@
         <!-- HEADER BOT -->
             <nav class="padd-10 display-none w-100-desktop fx-cont-desktop space-between-desktop "> 
                 <ul class="flex-cont margb-8 margt-8 w-40 navbar-desktop space-between-desktop">
-                    <li><a href="#ofertas"> Ofertas </a></li>
+                   <li><a href="#ofertas"> Ofertas </a></li>
                     <li><a href="#">Tiendas Oficiales</a></li>
                     <li><a href="#">Vender</a></li>
                     <li><a href="#">Ayuda</a></li>                
@@ -87,12 +88,13 @@
         <div class="burger-menu font-24 marg-15 burgerbox" >
             <i class="fas fa-bars "></i>
         </div>
-
-    <img class="w-100" src="\images\img-home-banner.jpg" alt=" Promocion fiestas"/>
-        
+        </div> 
     </header>
+    public/css/theme.css public/css/utils-css/utils.css views/home.html
     
-    <main class="main">
+    <main class="main ">
+    <img class="w-100" src="\images\img-home-banner.jpg" alt=" Promocion fiestas"/>
+
         <section class="flex-cont-wrap w-100 margb-15">
             <h2 
                 class="gris-oscuro w-100 font-24 pBT-15">
@@ -112,15 +114,17 @@
                     >
                         <i 
                             class="fas fa-truck truck-item verde">
-                        </i>   
-                        <p 
-                            class="w-25 font-20 margb-15 margt-15">
-                            $6.770
-                        </p>
-                        <p 
-                            class="w-75 verde font-20 margb-15 margt-15">
-                            40% off
-                        </p>
+                        </i>
+                        <div class="flex-cont-wrap ">
+                            <p 
+                                class="w-30 fit-cont font-20 margb-15 margt-15">
+                                $6.770
+                            </p>
+                            <p 
+                                class="padd-l-5 verde font-20 margb-15 margt-15">
+                                40% off
+                            </p>
+                        </div>
                         <h2 
                             class="product-title  gris-oscuro w-100 no-negrita margb-15 margt-15">
                             Cafetera Moulinex
@@ -142,14 +146,17 @@
                         <i 
                             class="fas fa-truck truck-item verde">
                         </i>
-                        <p 
-                            class="w-25 font-20 margb-15 margt-15">
-                            $230.000
-                        </p>
-                        <p 
-                            class="w-75 verde font-18 margb-15 margt-15">
-                            20% off
-                        </p>
+                        <div class="flex-cont-wrap ">
+
+                            <p 
+                                class="w-30 fit-cont font-20 margb-15 margt-15">
+                                $230.000
+                            </p>
+                            <p 
+                                class="padd-l-5 verde font-18 margb-15 margt-15">
+                                20% off
+                            </p>
+                        </div>
                         <h2 
                             class="product-title gris-oscuro w-100 no-negrita margb-15 margt-15">
                             MacBook Pro 2019
@@ -171,14 +178,17 @@
                         <i 
                             class="fas fa-truck truck-item verde">
                         </i>
-                        <p 
-                            class=" w-25 font-20 margb-15 margt-15">
-                            $70.500
-                        </p>
-                        <p 
-                            class=" w-75 verde font-18 margb-15 margt-15">
-                            10% off
-                       </p>
+                        <div class="flex-cont-wrap ">
+
+                            <p 
+                                class=" w-30 fit-cont font-20 margb-15 margt-15">
+                                $70.500
+                            </p>
+                            <p 
+                                class="padd-l-5  verde font-18 margb-15 margt-15">
+                                10% off
+                            </p>
+                        </div>
                         <h2 
                             class="product-title gris-oscuro w-100 no-negrita margb-15 margt-15">
                             Samsung Galaxy S10
@@ -200,14 +210,16 @@
                         <i 
                             class="fas fa-truck truck-item verde">
                         </i>
-                        <p 
-                            class="w-25 font-20 margb-15 margt-15">
-                            $23.200
-                        </p>
-                        <p 
-                            class="w-75 verde font-18 margb-15 margt-15">
-                            5% off
-                        </p>
+                        <div class="flex-cont-wrap ">
+                            <p 
+                                class="w-30 fit-cont font-20 margb-15 margt-15">
+                                $23.200
+                            </p>
+                            <p 
+                                class="padd-l-5 verde font-18 margb-15 margt-15">
+                                5% off
+                            </p>
+                        </div>   
                         <h2 
                             class="product-title gris-oscuro w-100 no-negrita margb-15 margt-15">
                             SmartTv Samsung 43"
@@ -335,7 +347,7 @@
                                 $23.200
                         </p>
                         <p 
-                            class="w-70 paddl verde font-18 padd-15">
+                            class="w-70  verde font-18 padd-15">
                             5% off
                         </p>
                         <h2 
@@ -349,10 +361,10 @@
     
 </main>
 
-<footer class="bg-footer">
-    <section class="flex-cont-wrap marg-15 flex-center">
+<footer class="footer ">
+    <section class="flex-cont-wrap marg-15 flex-center space-around-tablet">
       <article class=" w-90 padd-10 justify-center marg-8 w-33-tablet w-30-desktop">
-        <i class="fas fa-credit-card azul footer-item"></i>
+        <i class="fas fa-credit-card azul footer-item border-icon-desktop"></i>
         <p 
           class="negrita gris-oscuro font-20 ">
             Pagá con tarjeta o en efectivo
