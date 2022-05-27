@@ -9,10 +9,6 @@ app.listen(PORT, () => {
     console.log("Corriendo" + PORT);
 });
 
-app.listen (PORT, ()=> {
-       console.log ('El Servidor esta corriendo en el puerto ' + PORT);
-      });
-
 app.use(express.static(path.join(__dirname, "public")))
 
 app.get("/", (req, res) => {
